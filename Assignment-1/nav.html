@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    #navbar{
+        position: fixed;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 99%;
+        height: 50px;
+    }
+    #left{
+        display: flex;
+        justify-items: left;
+        justify-content: space-between;
+        align-items: left;
+        width: 50%;
+        }
+    #right{
+        display: flex;
+        justify-content: end;
+        width: 49%;
+        justify-content: right;
+        align-items: right;
+    }
+    #table{
+        padding-top: 60px;
+        width: 100%;
+    }
+    .view-btn{
+        background-color: rgb(79, 79, 253);
+        color: white;
+    }
+
+</style>
+<body>
+    <div id="navbar">
+        <div id="left">
+            <div id="icon1">Sharda</div>
+            <div id="icon2"><a href="blank">Home</a></div>
+            <div id="icon3"><a href="ab">Dashboard</a></div>
+            <div id="icon4"><a href="blank">Content</a></div>
+            <div id="icon5"><a href="ah">Course</a></div>
+            <div id="icon6"><a href="ja">User</a></div>
+        </div>
+        <div id="right">Icon</div>
+    </div>
+    <table id="table">
+        <thead>
+            <tr>
+                <th><input type="checkbox"></th>
+                <th>Name</th>
+                <th>Email</th>
+                <th>Username</th>
+                <th>Mobile</th>
+                <th>Role</th>
+                <th>Batches</th>
+                <th>Action</th>
+            </tr>
+            <hr>
+            <tr>
+                <td><input type="checkbox"></td>
+                <td>Nooridemo</td>
+                <td>noori@gmail.com</td>
+                <td>Noori</td>
+                <td>-</td>
+                <td>student</td>
+                <td>-</td>
+                <td><button class="view-btn">View</button></td>
+            </tr>
+            <tr>
+                <td><input type="checkbox"></td>
+                <td>Priyanshu</td>
+                <td>noori@gmail.com</td>
+                <td>Roy</td>
+                <td>8743857845</td>
+                <td>student</td>
+                <td>Tech Team Testing Program batch</td>
+                <td><button class="view-btn">View</button></td>
+            </tr>
+            <tr>
+                <td><input type="checkbox"></td>
+                <td>ABC</td>
+                <td>noori@gmail.com</td>
+                <td>ABC</td>
+                <td>34763761786</td>
+                <td>student</td>
+                <td>Tech Team Testing Program batch</td>
+                <td><button class="view-btn">View</button></td>
+            </tr>
+        </thead>
+    </table>
+</body>
+</html>
