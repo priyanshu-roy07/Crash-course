@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    /* #grid-demo{
+    display: grid;
+    border: 1px solid red;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+#box{
+    border: 1px solid blue;
+    height: 150px;
+    width: 150px;
+} */
+
+#grid-assgn1{
+    display: grid;
+    grid-template-areas: 
+    "first first first first"
+    "second second third fourth"
+    "second second fifth sixth"
+    "second second seventh seventh";
+}
+div{
+    border: 1px solid red
+}
+#first{
+    background-color: blue;
+}
+#second{
+    background-color: violet;
+}
+#third{
+    background-color: grey;
+}
+#fourth{
+    background-color: darkcyan;
+}
+#fifth{
+    background-color: darkgray;
+}
+#sixth{
+    background-color: darkolivegreen;
+}
+#seventh{
+    background-color: aqua;
+}
+
+</style>
+<body>
+    <!--11-10-2024  -->
+    <!-- <div id="grid-demo">
+        <div id="box"></div>
+        <div id="box"></div>
+        <div id="box"></div>
+        <div id="box"></div>
+        <div id="box"></div>
+        <div id="box"></div>
+        <div id="box"></div>
+        <div id="box"></div>
+        <div id="box"></div>
+    </div> -->
+
+    <div id="grid-assgn1">
+        <div style="grid-area: first;" id="first">Blue</div>
+        <div style="grid-area: second;" id="second">Violet</div>
+        <div style="grid-area: third;" id="third">Grey</div>
+        <div style="grid-area: fourth;" id="fourth">Grey</div>
+        <div style="grid-area: fifth;" id="fifth">Grey</div>
+        <div style="grid-area: sixth;" id="sixth">Grey</div>
+        <div style="grid-area: seventh;" id="seventh">Aqua</div>
+
+    </div>
+</body>
+</html>
