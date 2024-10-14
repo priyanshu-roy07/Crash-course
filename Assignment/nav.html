@@ -13,6 +13,7 @@
         align-items: center;
         width: 99%;
         height: 50px;
+        margin-bottom: 20px;
     }
     #left{
         display: flex;
@@ -29,14 +30,19 @@
         align-items: right;
     }
     #table{
-        padding-top: 60px;
+        margin-top: 20px;
         width: 100%;
+        border-collapse: collapse;
     }
     .view-btn{
         background-color: rgb(79, 79, 253);
         color: white;
     }
-
+    #thed{
+        text-decoration: solid;
+        border-collapse: collapse;
+        text-align: left;
+    }
 </style>
 <body>
     <div id="navbar">
@@ -50,8 +56,9 @@
         </div>
         <div id="right">Icon</div>
     </div>
+    <br>
     <table id="table">
-        <thead>
+        <thead id="thed">
             <tr>
                 <th><input type="checkbox"></th>
                 <th>Name</th>
@@ -62,7 +69,8 @@
                 <th>Batches</th>
                 <th>Action</th>
             </tr>
-            <hr>
+        </thead>
+        <tbody>
             <tr>
                 <td><input type="checkbox"></td>
                 <td>Nooridemo</td>
@@ -93,7 +101,7 @@
                 <td>Tech Team Testing Program batch</td>
                 <td><button class="view-btn">View</button></td>
             </tr>
-        </thead>
+        </tbody>
     </table>
 </body>
 </html>

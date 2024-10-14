@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Flipkart</title>
+</head>
+<style>
+header{
+    background-color: white;
+}
+.nav{
+    display: flex;
+    position: fixed;
+    justify-content: space-between;
+    width: 99%;
+    border: 1px solid red;
+    height: 70px;
+}
+.left{
+    display: flex;
+    border: 1px solid black;
+    width: 35%;
+    justify-content: space-between;
+    align-items: center;
+}
+#Flip{
+    display: flex;
+    width: 50%;
+    justify-content: center;
+    font-size: xx-large;
+}
+#Menu{
+    display: flex;
+    width: 50%;
+    justify-content: center;
+    align-items: center;
+}
+#menu1{
+    display: block;
+    padding-right: 10px;
+}
+#menuu{
+    width: 20px;
+    height: 3px;
+    background-color: black;
+    margin: 6px 0;
+}
+.center{
+    display: flex;
+    align-items: center;
+}
+.search1{
+    height: 30px;
+    width: 20px;
+}
+.center input{
+    width: 300px;
+    height: 30px;
+}
+.right{
+    display: flex;
+    width: 35%;
+    border: 1px solid black;
+    justify-content: space-between;
+    align-items: center;
+}
+#cart{
+    display: flex;
+    width: 50%;
+    justify-content: center;
+}
+#account{
+    display: flex;
+    width: 50%;
+    justify-content: center;
+}
+
+.nav2{
+    display: flex;
+    position: fixed;
+    justify-content: space-between;
+    width: 99%;
+    border: 1px solid blue;
+    height: 70px;
+    margin-top: 70px;
+}
+.mid{
+    display: flex;
+    width: 99%;
+    justify-content: space-between;
+    margin: 25px;
+    margin-left: 100px;
+    margin-right: 300px;
+}
+
+/* .gr{
+    display: grid;
+} */
+.grid{
+    display: grid;
+    border: 1px solid green;
+    height: 400px;
+    padding-top: 145px;
+    /* grid-template-columns: 1fr 1fr; */
+    grid-template-areas: 
+    "L1 R"
+    "L2 R";
+}
+#L1{
+    /* height: 200px; */
+    object-fit: contain;
+}
+#L2{
+    height: 200px;
+    object-fit: contain;
+}
+#R{
+    height: 400px;
+    object-fit: contain;
+}
+
+</style>
+<header>
+    <div class="nav">
+        <div class="left">
+            <div id="Flip">Flipkart</div>
+            <div id="Menu">
+                <div id="menu1">
+                    <div id="menuu"></div>
+                    <div id="menuu"></div>
+                    <div id="menuu"></div>
+                </div>
+                Menu
+            </div>
+        </div>
+        <div class="center">
+            <div><input type="text" placeholder="Search"></div>
+            <!-- <button type="submit"><i class= "search1"></i></button> -->
+        </div>
+        <div class="right">
+            <div id="cart">Cart</div>
+            <div id="account">Account</div>
+        </div>
+    </div>
+
+    <div class="nav2">
+        <div class="mid">
+            <div id="offer">Top Offers</div>
+            <div id="grocery">Grocery</div>
+            <div id="mobile">Mobiles</div>
+            <div id="home">Home</div>
+            <div id="elctronic">Elctronics</div>
+            <div id="fashion">Fashion</div>
+            <div id="beauty">Beauty & Accesories</div>
+        </div>
+    </div>
+</header>
+<body>
+    <div class="gr">
+    <div class="grid">
+        <div style="grid-area: L1;" id="L1"> <img src="IPhone.png"> </div>
+        <div style="grid-area: L2;" id="L2"> <img src="TV.png"> </div>
+        <div style="grid-area: R;" id="R"> <img src="Cycle.png"> </div>
+    </div>
+    </div>
+</body>
+</html>
