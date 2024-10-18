@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<style>
+    body{
+        display: flex;
+        justify-content: center;
+        height: 40vw;
+        align-items: center;
+        background-color: lightcyan;
+    }
+
+    #rect{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        block-size: 400px;
+        inline-size: 300px;
+        background-color: beige;
+        border: 1px solid black;
+        border-radius: 15px;
+        justify-content: center;
+
+    }
+    #square{
+        display: flex;
+        block-size: 250px;
+        inline-size: 175px;
+        background-color: yellowgreen;
+        margin-bottom: 20px;
+        border-radius: 10px;
+        justify-content: center;
+        align-items: center;
+        font-size: 50px;
+    }
+    #btn{
+        display: flex;
+        justify-content: space-between;
+        width: 150px;
+    }
+    #add, #sub{
+        display: flex;
+        height: 40px;
+        width: 40px;
+        justify-content: center;
+        align-items: center;
+        font-size: large;
+    }
+
+</style>
+
+<body>
+    <div id="rect">
+        <div id="square">
+            <div id="sq">0</div>
+        </div>
+        <div id="btn">
+            <button id="add" type="button">+</button>
+            <button id="sub" type="button">-</button>
+        </div>
+    </div>
+</body>
+</html>
+
+<script>
+    let val = 0;
+    const box=document.getElementById("sq");
+    const box1=document.getElementById("add");
+    const box2=document.getElementById("sub");
+
+    box1.addEventListener("click",function(){
+        val += 1;
+        box.innerText=val;
+    })
+
+    box2.addEventListener("click",function(){
+        val -= 1;
+        box.innerText=val;
+    })
+</script>
