@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Input Values</title>
+</head>
+
+<style>
+    body{
+        display: flex;
+        background-color: beige;
+        justify-content: center;
+        align-items: center;
+        height: 40vw;
+    }
+    #box{
+        display: flex;
+        flex-direction: column;
+        border: 5px solid black;
+        border-radius: 15px;
+        height: 400px;
+        width: 300px;
+        align-items: center;
+        justify-content: center;
+        background-color: orange;
+    }
+    #input-box,#input-box, #select{
+        margin-bottom: 20px;
+    }
+
+</style>
+<body>
+    <div id="box">
+        <h2>Noori computer classes</h2>
+        <input type="text" id="input-box">
+        <input type="text" id="input-box1">
+        <select id="select">
+            <option>1</option>
+            <option>2</option>
+            <option>3</option>
+        </select>
+        <input type="submit" id="submit">
+    </div>
+</body>
+</html>
+
+<script>
+    const box = document.getElementById("input-box");
+    const box2 = document.getElementById("input-box1");
+    const box1 = document.getElementById("submit");
+
+    box1.addEventListener("click",function(){
+        // alert("values changed in console")
+        console.log(box.value)
+        box.value = ""
+        console.log(box2.value)
+        box2.value = ""
+    })
+</script>
