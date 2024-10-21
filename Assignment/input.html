@@ -57,4 +57,15 @@
         console.log(box2.value)
         box2.value = ""
     })
+
+
+
+    let cart = [];
+    let box5=document.getElementById('data');
+
+for(let i=0;i<cart.length;i++){
+    const list=document.createElement("li");
+    list.innerText=cart[i].name;
+    box5.append(list);
+}
 </script>

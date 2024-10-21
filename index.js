@@ -29,14 +29,30 @@
 
 
 
-let arr=[1,2,3,4,5,6,7,8];
-// arr.splice(1,1)
-// a = arr.slice(2,5)
-// arr.push("Priyanshu")
-// a = arr.pop()
-// a = arr.unshift("Priyanshu")
-// a = arr.shift(0)
+// let arr=[1,2,3,4,5,6,7,8];
+// // arr.splice(1,1)
+// // a = arr.slice(2,5)
+// // arr.push("Priyanshu")
+// // a = arr.pop()
+// // a = arr.unshift("Priyanshu")
+// // a = arr.shift(0)
+// // console.log(arr)
+// console.log(a,arr)
 
 
+let cart = [
+    { name: "Lux", price: 50, comments: "", detail: "",  id: 4 },
+    { name: "Hajmola", price: 20, comments: "", detail: "", id: 2 },
+    { name: "Shampoo", price: 250, comments: "", detail: "", id: 5 },
+    { name: "Detol", price: 150, comments: "", detail: "", id: 6 },
+    { name: "Petrol", price: 150, comments: "", detail: "", id: 6 }
+]
+let arr = cart.filter(function(a){
+    if(a.price==150)
+        return false;
+    else
+    return true;
+});
 // console.log(arr)
-console.log(a,arr)
+cart = [...arr]
+console.log(cart)
