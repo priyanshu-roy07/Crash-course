@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<style>
+    body{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: 100vh;
+    }
+    #rect{
+        height: 300px;
+        width: 400px;
+        background-color: red;
+        margin-bottom: 20px
+    }
+</style>
+<body>
+    <div id="rect"></div>
+    <button id="btn" type="button">Click</button>
+</body>
+</html>
+
+<script>
+    const box = document.getElementById("rect");
+    const button = document.getElementById("btn");
+
+    button.addEventListener("click",function(){
+            box.style.borderRadius = '50%'
+            box.style.backgroundColor = 'blue'
+    })
+</script>
