@@ -13,16 +13,15 @@
 // build a timer when a button is click timer starts.
 
 let total=0;
-let c=0;
 console.log(5);
 
 setTimeout(function(){
     clearInterval(a)
 },10000)
-let c1=0
+let c=0
  let a=setInterval(function(){
-    c1++
-    document.getElementById('k').innerText=c1
+    c++
+    document.getElementById('k').innerText=c
 },1000)
 
 
