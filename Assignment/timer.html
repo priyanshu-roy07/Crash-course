@@ -13,14 +13,49 @@
         flex-direction: column;
         align-items: center;
         justify-content: center;
+        height: 100vh;
+    }
+    #outer{
+        display: flex;
+        /* flex-direction: column; */
+        align-items: center;
+        justify-content: center;
+        height: 100vh;
     }
 </style>
 <body>
-    <div id="time"></div>
-    <button id="btn" type="button">Click</button>
+    <div id="timer"></div>
+    <div id="outer">
+        <button id="btn1" type="button">Start</button>
+        <button id="btn2" type="button">Stop</button>
+        <button id="btn3" type="button">Reset</button>
+    </div>
 </body>
 </html>
 
 <script>
+ let start = document.getElementById("btn1")
+ let stop = document.getElementById("btn2")
+ let reset = document.getElementById("btn3")
+ let c = 0;
+ let time = 0;
+
+ reset.addEventListener("click",function(){
+    c=0;
+    timer.innerText=c;
+    time = null
+ })
+
+ start.addEventListener("click",function(){
+    if(!time)
+    time = setInterval(() => {
+    c++
+    timer.innerText = c;
+    },1000);
+ })
+
+ stop.addEventListener("click",function(){
+    clearInterval(time)
+ })
 
 </script>

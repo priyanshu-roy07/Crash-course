@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body id="oterbox">
+    <select name="" id="filter">
+        <option value="Asc">Asc</option>
+        <option value="Desc">Desc</option>
+    </select>
+    <table id="table">
+
+    </table>
+</body>
+</html>
+
+<script>
+let filter= document.getElementById('filter')
+    filter.addEventListener('change',function (event){
+        console.log(event.target.value)
+    })
+    fetch('https://jsonplaceholder.typicode.com/posts')
+        .then((ele) => {
+            return ele.json();
+        })
+        .then((ele) => {
+            abc(ele)
+        })
+        .catch((error) => {
+            console.log(error)
+        });
+        function abc(ele){
+            let data = document.getElementById("table");
+            data.innerText="";
+            let tr1 = document.createElement("tr");
+            let th1 = document.createElement('th');
+            th1.innerText = "Sl.";
+            let th2 = document.createElement('th');
+            th2.innerText = "Title";
+            let th3 = document.createElement('th');
+            th3.innerText = "Description";
+            tr1.append(th1, th2, th3);
+            data.append(tr1);
+            
+            for (let i = 0; i < ele.length; i++) {
+                let tr1 = document.createElement("tr");
+                let th1 = document.createElement('th');
+                th1.innerText = ele[i].id;
+                let th2 = document.createElement('th');
+                th2.innerText = ele[i].title;
+                let th3 = document.createElement('th');
+                th3.innerText = ele[i].body;
+                tr1.append(th1, th2, th3);
+                data.append(tr1);
+            }
+        }
+</script>
