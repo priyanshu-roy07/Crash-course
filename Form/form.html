@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="div">
+        <input type="text" id="name"><br>
+        <input type="text" id="f_name"><br>
+        <select name="course" id="course">
+            <option value="B.Tech">B.Tech</option>
+            <option value="BCA">BCA</option>
+        </select><br>
+        <div id="check">
+            <input type="checkbox" value="yes">Yes<br>
+            <input type="checkbox" value="no">No<br>
+        </div>
+        <input type="submit" id="submit">
+
+    </div>
+</body>
+</html>
+
+<script>
+    let name = document.getElementById('name')
+    let fname = document.getElementById('f_name')
+    let course = document.getElementById('course')
+    let submit = document.getElementById('submit')
+
+    course.addEventListener('click',function() {
+        let a = course.filter(program => program.value)
+    })
+    
+   submit.addEventListener('click',function(){
+    // console.log("hi")
+    fetch('http://localhost:3000/data' ,{
+        method:"POST",
+        body:JSON.stringify({
+            name:name.value,
+            fname:fname.value,
+            course:course.value
+        })
+    })
+    .then((ele)=>{
+       
+    })
+    .then((ele)=>{
+
+    })
+   })
+</script>

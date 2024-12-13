@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <a href="./dash.html">HomePage</a>
+    <input type="email" id="email"/>
+    <input type="password" id="password"/>
+    <button id="login" >Login</button>
+</body>
+<script >
+    let btn = document.getElementById("login")
+    btn.addEventListener('click',function(){
+        fetch("https://reqres.in/api/login",{
+            method:"Post",
+            body:JSON.stringify(
+                {"email":email,
+                "password":password
+            })
+        })
+        .then((e)=>e.json())
+        .then((e)=>console.log(e));
+
+    })
+
+// https://reqres.in/api/login
+
+    // document.getElementById("login").addEventListener("click",function(){
+
+    //     localStorage.setItem("email","eve.holt@reqres.in")
+    //     window.location.href='index.html';
+    // })
+
+    // if(localStorage.getItem("tAoKBePN")=="ppppppp12321131231"){
+    //     window.location.href="index.html"
+    // }
+   
+</script>
+</html>
+
+
+<!-- object key/value -->

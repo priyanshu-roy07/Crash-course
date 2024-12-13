@@ -1,0 +1,19 @@
+{
+  "data": [
+    {
+      "id": "2b49",
+      "name": {},
+      "fname": {},
+      "course": {
+        "0": {},
+        "1": {}
+      }
+    },
+    {
+      "id": "26fa",
+      "name": "Priyanshu Ray",
+      "fname": "Demo",
+      "course": "BCA"
+    }
+  ]
+}
