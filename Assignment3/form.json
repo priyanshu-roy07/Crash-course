@@ -1,0 +1,100 @@
+{
+  "users": [
+    {
+      "id": "b445",
+      "name": "Priyanshu Ray",
+      "age": "21",
+      "email": "donor123@gmail.com"
+    },
+    {
+      "id": "b843",
+      "name": "Job Portal",
+      "age": "65",
+      "email": "recipient123@gmail.com"
+    },
+    {
+      "id": "f64b",
+      "name": "Job Portal",
+      "age": "45",
+      "email": "recipient123@gmail.com"
+    },
+    {
+      "id": "020d",
+      "name": "Netflix Clone",
+      "age": "23",
+      "email": "recipient123@gmail.com"
+    },
+    {
+      "id": "ef62",
+      "name": "Vidit Biswas",
+      "age": "437",
+      "email": "recipient123@gmail.com"
+    },
+    {
+      "id": "89f4",
+      "name": "Tabraiz Khan",
+      "age": "32",
+      "email": "tabbu@gmail.com"
+    },
+    {
+      "id": "a8d0",
+      "name": "Noori Bhaiya",
+      "age": "48",
+      "email": "nooricomputerclasses@gmail.com"
+    },
+    {
+      "id": "baea",
+      "name": "bumba pandey",
+      "age": "",
+      "email": ""
+    },
+    {
+      "id": "0c1d",
+      "name": "Bumba",
+      "age": "27",
+      "email": "bumba@gmail.com"
+    },
+    {
+      "id": "4e9d",
+      "name": "Bumba",
+      "age": "27",
+      "email": "bumba@gmail.com"
+    },
+    {
+      "id": "ed8c",
+      "name": "Ayaz",
+      "age": "50",
+      "email": "ayaz@gmail.com"
+    },
+    {
+      "id": "fcc7",
+      "name": "Ayaz",
+      "age": "50",
+      "email": "ayaz@gmail.com"
+    },
+    {
+      "id": "5fbc",
+      "name": "Masai",
+      "age": "999",
+      "email": "masai@gmail.com"
+    },
+    {
+      "id": "7d0e",
+      "name": "sharda",
+      "age": "578",
+      "email": "sharda@gmail"
+    },
+    {
+      "id": "531d",
+      "name": "Netflix Clone",
+      "age": "123",
+      "email": "recipient123@gmail.com"
+    },
+    {
+      "id": "e4e8",
+      "name": "Job Portal",
+      "age": "23",
+      "email": "priyanshuroy003@gmail.com"
+    }
+  ]
+}

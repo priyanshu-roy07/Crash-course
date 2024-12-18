@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    body{
+            background-color: beige;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+    table{
+            background: white;
+            padding: 20px;
+            border-radius: 8px;
+            border-spacing: 0 15px;
+        }
+    button{
+            padding: 10px 20px;
+            font-size: 16px;
+            border: 0px;
+            border-radius: 4px;
+            cursor: pointer;
+            margin-right: 10px;
+        }
+
+</style>
+<body>
+    <table id="tab">
+        <tr>
+            <td>Name</td>
+            <td> <input type="text" placeholder="eg. Priyanshu" id="name"></td>
+        </tr>
+        <tr>
+            <td>Email</td>
+            <td><input type="email" id="email"></td>
+        </tr>
+        <tr>
+            <td>Age</td>
+            <td><input type="number" id="age"></td>    
+        </tr>
+        <tr>
+            <td>
+                <button type="submit" id="submit">Submit</button>
+                <button type="reset">Reset</button>
+            </td>
+        </tr>
+    </table>
+
+    <div id="output">
+        <h1>Submitted data</h1>
+        <ul id="data-list">
+
+        </ul>
+    </div>
+
+</body>
+</html>
+
+<script>
+    let name = document.getElementById('name');
+    let age = document.getElementById('age');
+    let email = document.getElementById('email');
+    let submit = document.getElementById('submit');
+    let output = document.getElementById('data-list');
+
+
+    submit.addEventListener('click', function(){
+
+        if (name.value == "") {
+            alert('Name is required')
+        }
+        if (age.value <= 0) {
+            alert("Enter a valid age")
+        }
+        // if (email) {
+            
+        // }
+        else{
+            alert("Form is valid")
+        }
+        let Data = {
+        name : document.getElementById('name').value,
+        age : document.getElementById('age').value,
+        email : document.getElementById('email').value
+        }
+        console.log(Data);
+
+
+        fetch('http://localhost:3000/users', {
+        method:'POST',
+        body: JSON.stringify(Data)
+    })
+    .then((ele)=>{
+        return ele.json();
+    })
+    .then((ele)=>{
+        console.log(ele)
+        dispalyData();
+    })
+     
+    })
+
+    dispalyData();
+
+    function dispalyData(){
+        output.innerText = ""
+        fetch('http://localhost:3000/users')
+        .then((arr)=> arr.json() ) 
+        .then((arr)=>{
+            let table_row = document.createElement('tr');
+            let td1 = document.createElement('th')
+            td1.innerText = "Name"
+            td1.id = 'th1'
+
+            let td2 = document.createElement('th')
+            td2.innerText = "Age"
+            td2.id = 'th2'
+
+            let td3 = document.createElement('th')
+            td3.innerText = "Email"
+            td3.id = 'th3'
+
+        table_row.append(td1, td2, td3);
+        // console.log(output)
+        output.append(table_row);
+
+        for (let i = 0; i < arr.length; i++) {
+            let table_row = document.createElement('tr');
+            let td1 = document.createElement('td')
+            td1.innerText = arr[i].name
+
+            let td2 = document.createElement('td')
+            td2.innerText = arr[i].age
+
+            let td3 = document.createElement('td')
+            td3.innerText = arr[i].email
+
+            table_row.append(td1, td2, td3);
+            output.append(table_row);
+            }
+        })
+        
+        
+    }
+
+    
+</script>

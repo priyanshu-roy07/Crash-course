@@ -20,6 +20,10 @@
         <input type="submit" id="submit">
 
     </div>
+    <select name="filter" id="filt">
+        <option value="B.Tech">B.Tech</option>
+        <option value="BCA">BCA</option>
+    </select>
 </body>
 </html>
 
@@ -28,10 +32,7 @@
     let fname = document.getElementById('f_name')
     let course = document.getElementById('course')
     let submit = document.getElementById('submit')
-
-    course.addEventListener('click',function() {
-        let a = course.filter(program => program.value)
-    })
+    let filt = document.getElementById('filt')
     
    submit.addEventListener('click',function(){
     // console.log("hi")
@@ -50,4 +51,16 @@
 
     })
    })
+
+   fetch('http://localhost:3000/data')
+   .then(el=>{
+    return el.json()
+   })
+   .then(el=>{
+    a.filter(()=>{
+        
+    })
+    })
+    let a = []
+    
 </script>

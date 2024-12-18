@@ -1,53 +1,61 @@
 {
-    "users": [
-      {
-        "id": 1,
-        "name": "John Doe",
-        "email": "john.doe@example.com",
-        "role": "admin"
-      },
-      {
-        "id": 2,
-        "name": "Jane Smith",
-        "email": "jane.smith@example.com",
-        "role": "user"
-      }
-    ],
-    "jobs": [
-      {
-        "id": 101,
-        "title": "Frontend Developer",
-        "company": "Tech Solutions",
-        "location": "New York, NY",
-        "type": "Full-time",
-        "description": "Develop and maintain front-end applications.",
-        "postedAt": "2024-11-28"
-      },
-      {
-        "id": 102,
-        "title": "Backend Developer",
-        "company": "CodeCorp",
-        "location": "San Francisco, CA",
-        "type": "Part-time",
-        "description": "Build and optimize backend systems.",
-        "postedAt": "2024-11-27"
-      }
-    ],
-    "applications": [
-      {
-        "id": 1001,
-        "jobId": 101,
-        "userId": 2,
-        "status": "pending",
-        "appliedAt": "2024-11-28"
-      },
-      {
-        "id": 1002,
-        "jobId": 102,
-        "userId": 1,
-        "status": "reviewed",
-        "appliedAt": "2024-11-26"
-      }
-    ]
-  }
-  
+  "users": [
+    {
+      "id": "1",
+      "name": "John Doe",
+      "email": "john.doe@example.com",
+      "role": "admin"
+    },
+    {
+      "id": "2",
+      "name": "Jane Smith",
+      "email": "jane.smith@example.com",
+      "role": "user"
+    },
+    {
+      "id": "1bfc"
+    },
+    {
+      "id": "b52d",
+      "name": "Priyanshu Ray",
+      "age": "21",
+      "email": "priyanshuroy003@gmail.com"
+    }
+  ],
+  "jobs": [
+    {
+      "id": "101",
+      "title": "Frontend Developer",
+      "company": "Tech Solutions",
+      "location": "New York, NY",
+      "type": "Full-time",
+      "description": "Develop and maintain front-end applications.",
+      "postedAt": "2024-11-28"
+    },
+    {
+      "id": "102",
+      "title": "Backend Developer",
+      "company": "CodeCorp",
+      "location": "San Francisco, CA",
+      "type": "Part-time",
+      "description": "Build and optimize backend systems.",
+      "postedAt": "2024-11-27"
+    }
+  ],
+  "applications": [
+    {
+      "id": "1001",
+      "jobId": 101,
+      "userId": 2,
+      "status": "pending",
+      "appliedAt": "2024-11-28"
+    },
+    {
+      "id": "1002",
+      "jobId": 102,
+      "userId": 1,
+      "status": "reviewed",
+      "appliedAt": "2024-11-26"
+    }
+  ]
+}
